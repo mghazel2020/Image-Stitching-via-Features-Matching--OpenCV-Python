@@ -185,8 +185,8 @@ The figure below illustrate dthe final stitched panoramas obtaiend using our out
     <td> OpenCV Built-in Stitching</td>
    </tr> 
    <tr>
-    <td> <img src="results/mountain-scene-stitched-panorama-image.jpg" width="600"  ></td>
-    <td> <img src="results/mountain-scene-stitched-panorama-image.jpg" width="600"  ></td>
+    <td> <img src="results/mountain-scene-2-images-panorama.jpg" width="600"  ></td>
+    <td> <img src="results/mountain-scene-2-images-panorama.jpg" width="600"  ></td>
    </tr> 
 </table>
 
