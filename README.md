@@ -40,11 +40,47 @@ The constructed mountain scene panorama constructed by stitching the above 3 ima
 
 OpenCV has a preconfigured Stitcher configurations to stitch images using different camera models for both C++ and Python APIs. More details about this built-in OpenCV stitching functionaly can be found [**here**](https://docs.opencv.org/master/d8/d19/tutorial_stitcher.html/).  
 
-The built-in OpenCv functinality has many advantages:
+The built-in OpenCV functinality has many advantages:
 
 * It does not require the input images to be ordered. That is there is no need to specify how images are adjacent to each other from left to right. 
-* It allows us to perform high-quality image stitching image quality very efficiently in just a few lines of come as demonstrated in our implemented code above. 
+* It allows us to perform high-quality image stitching image quality very efficiently in just a few lines of come as demonstrated in the code below. 
 * The image stitching results illustrated in the previous section are generated using the OpenCV Python API stitching functionality.
+
+```python
+import time
+import cv2
+import os
+import numpy as np
+import sys
+
+def main():
+    # read input images
+    imgs = []
+    path = 'images-set-03/'
+    i = 0
+    for (root, dirs, files) in os.walk(path):
+        images = [f for f in files]
+        print(images)
+        for i in range(0,len(images)):
+            curImg = cv2.imread(path + images[i])
+            imgs.append(curImg)
+
+    stitcher = cv2.Stitcher.create(mode= 0)
+    status ,result = stitcher.stitch(imgs)
+    if status != cv2.Stitcher_OK:
+        print("Can't stitch images, error code = %d" % status)
+        sys.exit(-1)
+    cv2.imwrite("panorama/output-set-03.jpg", result)
+    cv2.waitKey(0)
+
+
+if __name__ == '__main__':
+    start = time.time()
+    main()
+    end = time.time()
+    print("Time --->>>>>", end - start)
+    cv2.destroyAllWindows()
+```
 
 Next, we shall demonstrate how to develop step by step image stitching in order to get a better understanding of the various image processing operations involved in stitching images together.
 
