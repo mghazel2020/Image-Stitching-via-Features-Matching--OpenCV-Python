@@ -26,6 +26,16 @@ For example, consider the set of images below. From a group of an input montage,
    </tr> 
 </table>
 
+The constructed mountain scene panorama constructed by stitching the above 3 images is as follows.
+
+
+<table>
+  <tr>
+    <td> The constructed panorama image</td>
+    <td> <img src="results/mountain-scene-panorama-image.jpg" width="350"  > </td>
+   </tr> 
+</table>
+
 
 ## 4 Image Stiching using OpenCV Built-In Stitcher Class
 
