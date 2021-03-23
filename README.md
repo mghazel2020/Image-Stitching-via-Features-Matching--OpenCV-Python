@@ -110,6 +110,30 @@ The typical image stitching algorithm can be summaried in the following four key
 
 Next we shall illustrate the steps.
 
+### 5.1. Features Extraction
+
+Idealy, we should use the Scale Invariant Feature Transform (SIFT) descriptor, which is considered to be the best feature extractor and descriptor algorithm. However, thus algorithm has been removed from the  opencv_contrib for the latest version of OpenCV due to licensing requirements. Thus, instead of SIFT, we shall use a reasonably good feature detector and descriptor, known as Oriented FAST and Rotated BRIEF (ORB). 
+
+The next figure illustrated the detected ORB featues overlaid on the 2 input images.
+
+<table>
+    <td> <img src="figures/step_1_orb_features_detection.jpg" width="800"  ></td>
+   </tr> 
+</table>
+
+
+### 5.2. Features Matching
+
+Once you have got the descriptors and keypoints of 2 images, i.e. an image pair, we will find correspondences between them. Why do we do this ? Well, in order to join any two images into a bigger images, we must obtain as to what are the overlapping points. These overlapping points will give us an idea of the orientation of the second image w.r.t to the other one. And based on these common points, we get an idea whether the second image has just slid into the bigger image or has it been rotated and then overlapped, or maybe scaled down/up and then fitted. All such information is yielded by establishing correspondences. This process is called registration .
+
+For matching, one can use either FLANN or BFMatcher, that is provided by opencv.
+The next figure illustrated the detected ORB featues overlaid on the 2 input images.
+
+<table>
+    <td> <img src="figures/step_1_orb_features_detection.jpg" width="800"  ></td>
+   </tr> 
+</table>
+
 
 
 
