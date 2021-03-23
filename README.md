@@ -20,9 +20,9 @@ For example, consider the set of images below. From a group of an input montage,
     <td> Image # 3 </td>
    </tr> 
   <tr>
-    <td> <img src="images/mountain-scene-image-001.jpg" width="300"  ></td>
-    <td> <img src="images/mountain-scene-image-002.jpg" width="300"  ></td>
-    <td> <img src="images/mountain-scene-image-003.jpg" width="300"  > </td>
+    <td> <img src="images/mountain-scene-image-001.jpg" width="350"  ></td>
+    <td> <img src="images/mountain-scene-image-002.jpg" width="350"  ></td>
+    <td> <img src="images/mountain-scene-image-003.jpg" width="350"  > </td>
    </tr> 
 </table>
 
