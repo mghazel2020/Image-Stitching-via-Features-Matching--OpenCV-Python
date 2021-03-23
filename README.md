@@ -147,9 +147,9 @@ Estimating the homography is a simple task, which can easliy done using opencv, 
 The figure below illustrates the Homography transformation between the 2 images and the estimated Homography between the 2 input images os given as follows:
 
 ```python
-H = [[ 1.19183529e+00 -6.65424640e-02 -1.74309096e+02]
+H = [ 1.19183529e+00 -6.65424640e-02 -1.74309096e+02]
     [ 1.40139101e-01  1.11301924e+00 -9.48620737e+00]
-    [ 5.17091391e-04 -5.65556860e-05  1.00000000e+00]]
+    [ 5.17091391e-04 -5.65556860e-05  1.00000000e+00]
  ```
  
 <table>
