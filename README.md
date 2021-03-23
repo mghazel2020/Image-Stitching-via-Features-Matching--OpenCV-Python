@@ -136,6 +136,19 @@ The next figure illustrated the detected ORB featues overlaid on the 2 input ima
 
 
 
+### 5.3. Compute the Homography
+
+Yes, once we have obtained matches between the images, our next step is to calculate the homography matrix. The homography matrix will use these matching points, to estimate a relative orientation transform within the two images, by solving the following equation:
+
+*Ix=H×Iy*
+
+Estimating the homography is a simple task, which can easliy done using opencv, as demonstraed in the code. The solution homography matrix H of size 3x3, which preserves the straight lines in an image. Hence the only possible transformations possible are translations, affines, etc. For example, for an affine transform,
+
+<table>
+    <td> <img src="figures/step_3_homography_computation.jpg" width="800"  ></td>
+   </tr> 
+</table>
+
 
 
 ## 6. Conlcusions
