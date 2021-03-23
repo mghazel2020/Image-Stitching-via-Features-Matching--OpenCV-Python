@@ -32,7 +32,7 @@ The constructed mountain scene panorama constructed by stitching the above 3 ima
 <table>
   <tr>
     <td> The constructed panorama image</td>
-    <td> <img src="results/mountain-scene-stitched-panorama-image.jpg" width="350"  > </td>
+    <td> <img src="results/mountain-scene-stitched-panorama-image.jpg" width="500"  > </td>
    </tr> 
 </table>
 
