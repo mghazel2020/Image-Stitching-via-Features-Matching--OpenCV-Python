@@ -192,12 +192,15 @@ The figure below illustrate dthe final stitched panoramas obtaiend using our out
 
 ## 6. Additional Image Stitching Results
 
-### 6.1 
+### 6.1 Building Scene
+
 <table>
   <tr>
     <td> Image # 1</td>
     <td> Image # 2</td>
     <td> Image # 3 </td>
+    <td> Image # 4</td>
+    <td> Image # 5 </td>
    </tr> 
   <tr>
     <td> <img src="images/building1.JPG" width="350"  ></td>
@@ -216,6 +219,37 @@ The figure below illustrate dthe final stitched panoramas obtaiend using our out
    <tr>
     <td> <img src="results/building-scene-panorama.jpg" width="600"  ></td>
     <td> <img src="results/building-scene-panorama.jpg" width="600"  ></td>
+   </tr> 
+</table>
+
+
+### 6.1 Synthetic Scene Scene
+
+<table>
+  <tr>
+    <td> Image # 1</td>
+    <td> Image # 2</td>
+    <td> Image # 3 </td>
+    <td> Image # 4</td>
+    <td> Image # 5 </td>
+   </tr> 
+  <tr>
+    <td> <img src="images/building1.JPG" width="350"  ></td>
+    <td> <img src="images/building2.JPG" width="350"  ></td>
+    <td> <img src="images/building3.JPG" width="350"  > </td>
+    <td> <img src="images/building4.JPG" width="350"  ></td>
+    <td> <img src="images/building5.JPG" width="350"  > </td>
+   </tr> 
+</table>
+
+<table>
+   <tr>
+    <td>Step-by-Step Stitching</td>
+    <td> OpenCV Built-in Stitching</td>
+   </tr> 
+   <tr>
+    <td> <img src="results/synthetic-5-images-panorama.jpg" width="600"  ></td>
+    <td> <img src="results/synthetic-5-images-panorama.jpg" width="600"  ></td>
    </tr> 
 </table>
 
