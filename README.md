@@ -52,7 +52,32 @@ Next, we shall demonstrate how to develop step by step image stitching in order 
 
 ## 5 Development Simplified Image Stiching 
 
-In this section, we shall demonstrate how to develop step by step image stitching in order to get a better understanding of the various image processing operations involved in stitching images together.
+In this section, we shall demonstrate how to develop step by step image stitching in order to get a better understanding of the various image processing operations involved in stitching images together. We shall us ethe following 2 input images for our illustration.
+
+<table>
+  <tr>
+    <td> Image # 1</td>
+    <td> Image # 2</td>
+   </tr> 
+  <tr>
+    <td> <img src="images/mountain-scene-image-001.jpg" width="400"  ></td>
+    <td> <img src="images/mountain-scene-image-002.jpg" width="400"  ></td>
+   </tr> 
+</table>
+
+
+The typical image stitching algorithm can be summaried in the following four key steps:
+
+1. Detecting keypoints (DoG, Harris, etc.) and extracting local invariant descriptors (SIFT, SURF, etc.) from two input images
+2. Matching the descriptors between the images
+3. Using the RANSAC algorithm to estimate a homography matrix using our matched feature vectors
+4. Applying a warping transformation using the homography matrix obtained from Step 3.
+
+Next we shall illustrate the steps.
+
+
+
+
 
 ## 6 Conlcusions
 
