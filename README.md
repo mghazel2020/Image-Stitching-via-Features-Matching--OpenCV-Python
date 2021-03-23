@@ -1,12 +1,12 @@
 # Image-Stitching-via-Features-Matching-OpenCV-Python
 
-## 1 Objective
+## 1. Objective
 
 To demonstrate image registration and stitching using features detection and matching built-in OpenCV with Python API. 
 
-## 2 Code
+## 2. Code
 
-## 3 What is Image Stitching?
+## 3. What is Image Stitching?
 
 So what is image stitching ? In simple terms, for an input group of images, the output is a composite image such that it is a culmination of scenes. At the same time, the logical flow between the images must be preserved.
 
@@ -37,7 +37,7 @@ The constructed mountain scene panorama constructed by stitching the above 3 ima
 </table>
 
 
-## 4 Image Stiching using OpenCV Built-In Stitcher Class
+## 4. Image Stiching using OpenCV Built-In Stitcher Class
 
 OpenCV has a preconfigured Stitcher configurations to stitch images using different camera models for both C++ and Python APIs. More details about this built-in OpenCV stitching functionaly can be foun  ([here](https://docs.opencv.org/master/d8/d19/tutorial_stitcher.html/)).  
 
@@ -50,7 +50,7 @@ The built-in OpenCv functinality has many advantages:
 Next, we shall demonstrate how to develop step by step image stitching in order to get a better understanding of the various image processing operations involved in stitching images together.
 
 
-## 5 Development Simplified Image Stiching 
+## 5. Development Simplified Image Stiching 
 
 In this section, we shall demonstrate how to develop step by step image stitching in order to get a better understanding of the various image processing operations involved in stitching images together. We shall us ethe following 2 input images for our illustration.
 
@@ -79,5 +79,5 @@ Next we shall illustrate the steps.
 
 
 
-## 6 Conlcusions
+## 6. Conlcusions
 
