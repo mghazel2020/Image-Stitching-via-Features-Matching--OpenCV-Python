@@ -130,7 +130,7 @@ For matching, one can use either FLANN or BFMatcher, that is provided by opencv.
 The next figure illustrated the detected ORB featues overlaid on the 2 input images.
 
 <table>
-    <td> <img src="figures/step_1_orb_features_detection.jpg" width="800"  ></td>
+    <td> <img src="figures/step_2_orb_features_matching_flann.jpg" width="800"  ></td>
    </tr> 
 </table>
 
