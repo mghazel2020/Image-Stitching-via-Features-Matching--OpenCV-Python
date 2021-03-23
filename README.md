@@ -174,7 +174,6 @@ Each warping model has its own application. For the purposes of this demonstrati
 
 In summary, image warping essentially involves the application of the homography matrix to one of the images in order to change its field of view to match its adjacent image.
 
-
 Once, we have obtained a warped image, we simply concatenate the warped image to the end the next image. Repeat this over through the list of ordered images, in the formaward and backward directions, yield the final stitched panorama image sof the various images. 
 
 The figure below illustrate dthe final stitched panoramas obtaiend using our outlined step-by-step approach as well as the OpenCV built-in stitching functiuinality.
@@ -191,7 +190,33 @@ The figure below illustrate dthe final stitched panoramas obtaiend using our out
 </table>
 
 
+## 6. Additional Image Stitching Results
+
+### 6.1 
+<table>
+  <tr>
+    <td> Image # 1</td>
+    <td> Image # 2</td>
+    <td> Image # 3 </td>
+   </tr> 
+  <tr>
+    <td> <img src="images/mountain-scene-image-001.jpg" width="350"  ></td>
+    <td> <img src="images/mountain-scene-image-002.jpg" width="350"  ></td>
+    <td> <img src="images/mountain-scene-image-003.jpg" width="350"  > </td>
+   </tr> 
+</table>
+
+<table>
+   <tr>
+    <td>Step-by-Step Stitching</td>
+    <td> OpenCV Built-in Stitching</td>
+   </tr> 
+   <tr>
+    <td> <img src="results/mountain-scene-2-images-panorama.jpg" width="600"  ></td>
+    <td> <img src="results/mountain-scene-2-images-panorama.jpg" width="600"  ></td>
+   </tr> 
+</table>
 
 
-## 6. Conlcusions
+## 7. Conlcusions
 
