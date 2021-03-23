@@ -39,8 +39,20 @@ The constructed mountain scene panorama constructed by stitching the above 3 ima
 
 ## 4 Image Stiching using OpenCV Built-In Stitcher Class
 
+OpenCV has a preconfigured Stitcher configurations to stitch images using different camera models for both C++ and Python APIs. More details about this built-in OpenCV stitching functionaly can be foun  ([here](https://docs.opencv.org/master/d8/d19/tutorial_stitcher.html/)).  
+
+The built-in OpenCv functinality has many advantages:
+
+* It does not require the input images to be ordered. That is there is no need to specify how images are adjacent to each other from left to right. 
+* It allows us to perform high-quality image stitching image quality very efficiently in just a few lines of come as demonstrated in our implemented code above. 
+* The image stitching results illustrated in the previous section are generated using the OpenCV Python API stitching functionality.
+
+Next, we shall demonstrate how to develop step by step image stitching in order to get a better understanding of the various image processing operations involved in stitching images together.
+
+
 ## 5 Development Simplified Image Stiching 
 
+In this section, we shall demonstrate how to develop step by step image stitching in order to get a better understanding of the various image processing operations involved in stitching images together.
 
 ## 6 Conlcusions
 
