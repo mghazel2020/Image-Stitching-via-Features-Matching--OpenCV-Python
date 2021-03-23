@@ -12,7 +12,6 @@ So what is image stitching ? In simple terms, for an input group of images, the 
 
 For example, consider the set of images below. From a group of an input montage, we are essentially creating a singular stitched image. One that it covers the full scene in details.
 
-
 <table>
   <tr>
     <td> Image # 1</td>
@@ -39,7 +38,7 @@ The constructed mountain scene panorama constructed by stitching the above 3 ima
 
 ## 4. Image Stiching using OpenCV Built-In Stitcher Class
 
-OpenCV has a preconfigured Stitcher configurations to stitch images using different camera models for both C++ and Python APIs. More details about this built-in OpenCV stitching functionaly can be foun  ([here](https://docs.opencv.org/master/d8/d19/tutorial_stitcher.html/)).  
+OpenCV has a preconfigured Stitcher configurations to stitch images using different camera models for both C++ and Python APIs. More details about this built-in OpenCV stitching functionaly can be found [**here**](https://docs.opencv.org/master/d8/d19/tutorial_stitcher.html/).  
 
 The built-in OpenCv functinality has many advantages:
 
