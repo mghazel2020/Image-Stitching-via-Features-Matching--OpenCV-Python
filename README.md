@@ -200,9 +200,11 @@ The figure below illustrate dthe final stitched panoramas obtaiend using our out
     <td> Image # 3 </td>
    </tr> 
   <tr>
-    <td> <img src="images/mountain-scene-image-001.jpg" width="350"  ></td>
-    <td> <img src="images/mountain-scene-image-002.jpg" width="350"  ></td>
-    <td> <img src="images/mountain-scene-image-003.jpg" width="350"  > </td>
+    <td> <img src="images/building1.JPG" width="350"  ></td>
+    <td> <img src="images/building2.JPG" width="350"  ></td>
+    <td> <img src="images/building3.JPG" width="350"  > </td>
+    <td> <img src="images/building4.JPG" width="350"  ></td>
+    <td> <img src="images/building5.JPG" width="350"  > </td>
    </tr> 
 </table>
 
@@ -212,8 +214,8 @@ The figure below illustrate dthe final stitched panoramas obtaiend using our out
     <td> OpenCV Built-in Stitching</td>
    </tr> 
    <tr>
-    <td> <img src="results/mountain-scene-2-images-panorama.jpg" width="600"  ></td>
-    <td> <img src="results/mountain-scene-2-images-panorama.jpg" width="600"  ></td>
+    <td> <img src="results/building-scene-panorama.jpg" width="600"  ></td>
+    <td> <img src="results/building-scene-panorama.jpg" width="600"  ></td>
    </tr> 
 </table>
 
