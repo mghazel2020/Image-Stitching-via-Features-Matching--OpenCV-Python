@@ -194,6 +194,9 @@ The figure below illustrate dthe final stitched panoramas obtaiend using our out
 
 ### 6.1 Building Scene
 
+The set of of building outddor scene images below are used to demonstrate a [MATLAB image stitching capabilities.](https://kushalvyas.github.io/stitching.html/).  
+
+
 <table>
   <tr>
     <td> Image # 1</td>
@@ -225,6 +228,9 @@ The figure below illustrate dthe final stitched panoramas obtaiend using our out
 
 ### 6.1 Synthetic Scene Scene
 
+The set of synthetic indoor scene images below are taken from PAnorama Sparsely STructured Areas Datasets [PASSTA](http://www.cvl.isy.liu.se/en/research/datasets/passta/).  
+
+
 <table>
   <tr>
     <td> Image # 1</td>
@@ -234,11 +240,11 @@ The figure below illustrate dthe final stitched panoramas obtaiend using our out
     <td> Image # 5 </td>
    </tr> 
   <tr>
-    <td> <img src="images/building1.JPG" width="350"  ></td>
-    <td> <img src="images/building2.JPG" width="350"  ></td>
-    <td> <img src="images/building3.JPG" width="350"  > </td>
-    <td> <img src="images/building4.JPG" width="350"  ></td>
-    <td> <img src="images/building5.JPG" width="350"  > </td>
+    <td> <img src="images/img01.jpg" width="350"  ></td>
+    <td> <img src="images/img07.jpg" width="350"  ></td>
+    <td> <img src="images/img13.jpg" width="350"  > </td>
+    <td> <img src="images/img19.jpg" width="350"  ></td>
+    <td> <img src="images/img25.jpg" width="350"  > </td>
    </tr> 
 </table>
 
