@@ -153,9 +153,43 @@ H = [ 1.19183529e+00 -6.65424640e-02 -1.74309096e+02]
  ```
  
 <table>
+   <tr>
     <td> <img src="figures/step_3_homography_computation.jpg" width="800"  ></td>
    </tr> 
 </table>
+
+
+
+### 5.4. Warp and Stitch the images together
+
+So , once we have established a homography, i.e. we know how the second image (let’s say the image to the right) will look from the current image’s perspective, we need to transform it into a new space. This transformation mimics the phenomenon that we undergo. That is, the slightly distorted, and altered image that we see from our periphery . This process is called warping. We are converting an image, based on a new transformation.
+
+There are three main warping models:
+
+* Planar : wherein every image is an element of a plane surface, subject to translation and rotations …
+* Cylindrical : wherein every image is represented as if the coordinate system was cylindrical. and the image was plotted on the curved surface of the cylinder.
+* Spherical : the above appends, instead of a cylinder, the reference model is a sphere.
+
+Each warping model has its own application. For the purposes of this demonstration, we apply planar homography and warping.
+
+In summary, image warping essentially involves the application of the homography matrix to one of the images in order to change its field of view to match its adjacent image.
+
+
+Once, we have obtained a warped image, we simply concatenate the warped image to the end the next image. Repeat this over through the list of ordered images, in the formaward and backward directions, yield the final stitched panorama image sof the various images. 
+
+The figure below illustrate dthe final stitched panoramas obtaiend using our outlined step-by-step approach as well as the OpenCV built-in stitching functiuinality.
+
+<table>
+   <tr>
+    <td>Step-by-Step Stitching</td>
+    <td> OpenCV Built-in Stitching</td>
+   </tr> 
+   <tr>
+    <td> <img src="figures/mountain-scene-stitched-panorama-image.jpg" width="600"  ></td>
+    <td> <img src="figures/mountain-scene-stitched-panorama-image.jpg" width="600"  ></td>
+   </tr> 
+</table>
+
 
 
 
