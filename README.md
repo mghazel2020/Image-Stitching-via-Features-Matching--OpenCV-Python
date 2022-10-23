@@ -93,7 +93,7 @@ The next figure illustrated the detected ORB featues overlaid on the 2 input ima
 
 ### 4.2. Features Matching
 
-Once you have got the descriptors and keypoints of 2 images, i.e. an image pair, we will find correspondences between them. Why do we do this ? Well, in order to join any two images into a bigger images, we must obtain as to what are the overlapping points. These overlapping points will give us an idea of the orientation of the second image w.r.t to the other one. And based on these common points, we get an idea whether the second image has just slid into the bigger image or has it been rotated and then overlapped, or maybe scaled down/up and then fitted. All such information is yielded by establishing correspondences. This process is called registration .
+Once you have generated the descriptors and keypoints of 2 images, i.e. an image pair, we will find correspondences between them. Why do we do this ? Well, in order to join any two images into a bigger images, we must obtain as to what are the overlapping points. These overlapping points will give us an idea of the orientation of the second image w.r.t to the other one. And based on these common points, we get an idea whether the second image has just slid into the bigger image or has it been rotated and then overlapped, or maybe scaled down/up and then fitted. All such information is yielded by establishing correspondences. This process is called registration .
 
 For matching, one can use either FLANN or BFMatcher, that is provided by opencv.
 The next figure illustrated the detected ORB featues overlaid on the 2 input images.
@@ -126,7 +126,7 @@ H = [ 1.19183529e+00 -6.65424640e-02 -1.74309096e+02]
 
 ### 4.4. Warp and Stitch the images together
 
-So , once we have established a homography, i.e. we know how the second image (let’s say the image to the right) will look from the current image’s perspective, we need to transform it into a new space. This transformation mimics the phenomenon that we undergo. That is, the slightly distorted, and altered image that we see from our periphery . This process is called warping. We are converting an image, based on a new transformation.
+So, once we have established a homography, i.e. we know how the second image (let’s say the image to the right) will look from the current image’s perspective, we need to transform it into a new space. This transformation mimics the phenomenon that we undergo. That is, the slightly distorted, and altered image that we see from our periphery . This process is called warping. We are converting an image, based on a new transformation.
 
 There are three main warping models:
 
@@ -140,7 +140,7 @@ In summary, image warping essentially involves the application of the homography
 
 Once, we have obtained a warped image, we simply concatenate the warped image to the end the next image. Repeat this over through the list of ordered images, in the formaward and backward directions, yield the final stitched panorama image sof the various images. 
 
-The figure below illustrate dthe final stitched panoramas obtaiend using our outlined step-by-step approach as well as the OpenCV built-in stitching functiuinality.
+The figure below illustrate the final stitched panoramas obtaiend using our outlined step-by-step approach as well as the OpenCV built-in stitching functiuinality.
 
 <table>
    <tr>
