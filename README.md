@@ -224,14 +224,14 @@ The set of synthetic indoor scene images below are taken from PAnorama Sparsely 
 </table>
 
 
-## 7.  Analysis
+## 6.  Analysis
 
 Image stitching using OpenCV Python Stitcher() class is simple, fast, efficient and generate high-quality panorama image:
 
 * The image border are blended together nicely
 * Any illumination differences between the 3 images are mot apparent in the panorama image.
 
-## 8.  Future Work
+## 7.  Future Work
 
 We plan to implement a simplified image stitching from scratch in order to demonstrate the different steps involved in image stitching. The typical image stitching algorithm can be summarized in the following four key steps:
 
@@ -242,7 +242,7 @@ We plan to implement a simplified image stitching from scratch in order to demon
 
 We plan to implement each of these image-stitching steps using ordered ordered images.
 
-## 9.  References
+## 8.  References
 
 1. Adrian Rosebrock. Image Stitching with OpenCV and Python. Retrieved from: https://www.pyimagesearch.com/2018/12/17/image-stitching-with-opencv-and-python/ (October 5th, 2022).
 2. Thalles Silva. (April 13, 2021). Retrieved from: Image Panorama Stitching with OpenCV. https://towardsdatascience.com/image-panorama-stitching-with-opencv-2402bde6b46c (October 5th, 2022).
