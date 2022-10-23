@@ -1,12 +1,17 @@
 # Image-Stitching-via-Features-Matching-OpenCV-Python
 
+<table>
+  <tr>
+    <td> <img src="images/image_stitching_opencv_header.jpg" width="600"  ></td>
+   </tr> 
+</table>
+
+
 ## 1. Objective
 
 To demonstrate image registration and stitching using features detection and matching built-in OpenCV with Python API. 
 
-## 2. Code
-
-## 3. What is Image Stitching?
+## 2. What is Image Stitching?
 
 So what is image stitching ? In simple terms, for an input group of images, the output is a composite image such that it is a culmination of scenes. At the same time, the logical flow between the images must be preserved.
 
@@ -27,7 +32,6 @@ For example, consider the set of images below. From a group of an input montage,
 
 The constructed mountain scene panorama constructed by stitching the above 3 images is as follows.
 
-
 <table>
   <tr>
     <td> The constructed panorama image</td>
@@ -36,7 +40,7 @@ The constructed mountain scene panorama constructed by stitching the above 3 ima
 </table>
 
 
-## 4. Image Stiching using OpenCV Built-In Stitcher Class
+## 3. Image Stiching using OpenCV Built-In Stitcher Class
 
 OpenCV has a preconfigured Stitcher configurations to stitch images using different camera models for both C++ and Python APIs. More details about this built-in OpenCV stitching functionaly can be found [**here**](https://docs.opencv.org/master/d8/d19/tutorial_stitcher.html/).  
 
@@ -46,46 +50,10 @@ The built-in OpenCV functinality has many advantages:
 * It allows us to perform high-quality image stitching image quality very efficiently in just a few lines of come as demonstrated in the code below. 
 * The image stitching results illustrated in the previous section are generated using the OpenCV Python API stitching functionality.
 
-```python
-import time
-import cv2
-import os
-import numpy as np
-import sys
-
-def main():
-    # read input images
-    imgs = []
-    path = 'images-set-03/'
-    i = 0
-    for (root, dirs, files) in os.walk(path):
-        images = [f for f in files]
-        print(images)
-        for i in range(0,len(images)):
-            curImg = cv2.imread(path + images[i])
-            imgs.append(curImg)
-
-    stitcher = cv2.Stitcher.create(mode= 0)
-    status ,result = stitcher.stitch(imgs)
-    if status != cv2.Stitcher_OK:
-        print("Can't stitch images, error code = %d" % status)
-        sys.exit(-1)
-    cv2.imwrite("panorama/output-set-03.jpg", result)
-    cv2.waitKey(0)
-
-
-if __name__ == '__main__':
-    start = time.time()
-    main()
-    end = time.time()
-    print("Time --->>>>>", end - start)
-    cv2.destroyAllWindows()
-```
-
 Next, we shall demonstrate how to develop step by step image stitching in order to get a better understanding of the various image processing operations involved in stitching images together.
 
 
-## 5. Development Simplified Image Stiching 
+## 4. Development Simplified Image Stiching 
 
 In this section, we shall demonstrate how to develop step by step image stitching in order to get a better understanding of the various image processing operations involved in stitching images together. We shall us ethe following 2 input images for our illustration.
 
@@ -110,7 +78,7 @@ The typical image stitching algorithm can be summaried in the following four key
 
 Next we shall illustrate the steps.
 
-### 5.1. Features Extraction
+### 4.1. Features Extraction
 
 Idealy, we should use the Scale Invariant Feature Transform (SIFT) descriptor, which is considered to be the best feature extractor and descriptor algorithm. However, thus algorithm has been removed from the  opencv_contrib for the latest version of OpenCV due to licensing requirements. Thus, instead of SIFT, we shall use a reasonably good feature detector and descriptor, known as Oriented FAST and Rotated BRIEF (ORB). 
 
@@ -122,7 +90,7 @@ The next figure illustrated the detected ORB featues overlaid on the 2 input ima
 </table>
 
 
-### 5.2. Features Matching
+### 4.2. Features Matching
 
 Once you have got the descriptors and keypoints of 2 images, i.e. an image pair, we will find correspondences between them. Why do we do this ? Well, in order to join any two images into a bigger images, we must obtain as to what are the overlapping points. These overlapping points will give us an idea of the orientation of the second image w.r.t to the other one. And based on these common points, we get an idea whether the second image has just slid into the bigger image or has it been rotated and then overlapped, or maybe scaled down/up and then fitted. All such information is yielded by establishing correspondences. This process is called registration .
 
@@ -136,7 +104,7 @@ The next figure illustrated the detected ORB featues overlaid on the 2 input ima
 
 
 
-### 5.3. Compute the Homography
+### 4.3. Compute the Homography
 
 Yes, once we have obtained matches between the images, our next step is to calculate the homography matrix. The homography matrix will use these matching points, to estimate a relative orientation transform within the two images, by solving the following equation:
 
@@ -160,7 +128,7 @@ H = [ 1.19183529e+00 -6.65424640e-02 -1.74309096e+02]
 
 
 
-### 5.4. Warp and Stitch the images together
+### 4.4. Warp and Stitch the images together
 
 So , once we have established a homography, i.e. we know how the second image (let’s say the image to the right) will look from the current image’s perspective, we need to transform it into a new space. This transformation mimics the phenomenon that we undergo. That is, the slightly distorted, and altered image that we see from our periphery . This process is called warping. We are converting an image, based on a new transformation.
 
@@ -190,9 +158,9 @@ The figure below illustrate dthe final stitched panoramas obtaiend using our out
 </table>
 
 
-## 6. Additional Image Stitching Results
+## 5. Additional Image Stitching Results
 
-### 6.1 Building Scene
+### 5.1. Building Scene
 
 The set of of building outddor scene images below are used to demonstrate a [MATLAB image stitching capabilities.](https://kushalvyas.github.io/stitching.html/).  
 
@@ -226,7 +194,7 @@ The set of of building outddor scene images below are used to demonstrate a [MAT
 </table>
 
 
-### 6.1 Synthetic Scene Scene
+### 5.2. Synthetic Scene Scene
 
 The set of synthetic indoor scene images below are taken from PAnorama Sparsely STructured Areas Datasets [PASSTA](http://www.cvl.isy.liu.se/en/research/datasets/passta/).  
 
@@ -260,5 +228,28 @@ The set of synthetic indoor scene images below are taken from PAnorama Sparsely 
 </table>
 
 
-## 7. Conlcusions
+## 7.  Analysis
 
+Image stitching using OpenCV Python Stitcher() class is simple, fast, efficient and generate high-quality panorama image:
+
+* The image border are blended together nicely
+* Any illumination differences between the 3 images are mot apparent in the panorama image.
+
+## 8.  Future Work
+
+We plan to implement a simplified image stitching from scratch in order to demonstrate the different steps involved in image stitching. The typical image stitching algorithm can be summarized in the following four key steps:
+
+* Detecting key-points  and extracting local invariant descriptors from two input images
+* Matching the descriptors between the images
+* Using the RANSAC algorithm to estimate a Homography matrix using our matched feature vectors
+* Applying a warping transformation using the Homography matrix obtained from Step 3.
+
+We plan to implement each of these image-stitching steps using ordered ordered images.
+
+## 9.  References
+
+1. Adrian Rosebrock. Image Stitching with OpenCV and Python. Retrieved from: https://www.pyimagesearch.com/2018/12/17/image-stitching-with-opencv-and-python/ (October 5th, 2022).
+2. Thalles Silva. (April 13, 2021). Retrieved from: Image Panorama Stitching with OpenCV. https://towardsdatascience.com/image-panorama-stitching-with-opencv-2402bde6b46c (October 5th, 2022).
+3. Data Hacker. (April 13, 2021). How to create a panorama image using OpenCV with Python. Retrieved from: http://datahacker.rs/005-how-to-create-a-panorama-image-using-opencv-with-python/ (October 5th, 2022).
+4. Naveksha Sood. (April 13, 2021). Image Stitching to create a Panorama. Retrieved from: https://medium.com/@navekshasood/image-stitching-to-create-a-panorama-5e030ecc8f7 (October 5th, 2022).
+5. Vagdevi Kommineni. (April 13, 2021). Image Stitching. Retrieved from: https://vagdevik.wordpress.com/author/ (October 5th, 2022).
