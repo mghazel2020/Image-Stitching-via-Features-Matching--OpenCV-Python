@@ -2,7 +2,7 @@
 
 <table>
   <tr>
-    <td> <img src="images/image_stitching_opencv_header.jpg" width="400"  ></td>
+    <td> <img src="images/image_stitching_opencv_header.jpg" width="500"  ></td>
    </tr> 
 </table>
 
