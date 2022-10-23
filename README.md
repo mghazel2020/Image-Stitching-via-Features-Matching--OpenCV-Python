@@ -1,4 +1,4 @@
-# Image-Stitching-via-Features-Matching-OpenCV-Python
+# Image Stitching via Features Matching using OpenCV-Python
 
 <table>
   <tr>
@@ -19,9 +19,9 @@ For example, consider the set of images below. From a group of an input montage,
 
 <table>
   <tr>
-    <td> Image # 1</td>
-    <td> Image # 2</td>
-    <td> Image # 3 </td>
+    <td align="center"> Image # 1</td>
+    <td align="center"> Image # 2</td>
+    <td align="center"> Image # 3 </td>
    </tr> 
   <tr>
     <td> <img src="images/mountain-scene-image-001.jpg" width="350"  ></td>
@@ -34,9 +34,11 @@ The constructed mountain scene panorama constructed by stitching the above 3 ima
 
 <table>
   <tr>
-    <td> The constructed panorama image</td>
     <td> <img src="results/mountain-scene-stitched-panorama-image.jpg" width="500"  > </td>
    </tr> 
+   <tr>
+    <td align="center"> The constructed panorama image</td>
+   </tr>
 </table>
 
 
@@ -59,8 +61,8 @@ In this section, we shall demonstrate how to develop step by step image stitchin
 
 <table>
   <tr>
-    <td> Image # 1</td>
-    <td> Image # 2</td>
+    <td align="center"> Image # 1</td>
+    <td align="center"> Image # 2</td>
    </tr> 
   <tr>
     <td> <img src="images/mountain-scene-image-001.jpg" width="400"  ></td>
@@ -86,7 +88,6 @@ The next figure illustrated the detected ORB featues overlaid on the 2 input ima
 
 <table>
     <td> <img src="figures/step_1_orb_features_detection.jpg" width="800"  ></td>
-   </tr> 
 </table>
 
 
@@ -99,10 +100,7 @@ The next figure illustrated the detected ORB featues overlaid on the 2 input ima
 
 <table>
     <td> <img src="figures/step_2_orb_features_matching_flann.jpg" width="800"  ></td>
-   </tr> 
 </table>
-
-
 
 ### 4.3. Compute the Homography
 
@@ -126,8 +124,6 @@ H = [ 1.19183529e+00 -6.65424640e-02 -1.74309096e+02]
    </tr> 
 </table>
 
-
-
 ### 4.4. Warp and Stitch the images together
 
 So , once we have established a homography, i.e. we know how the second image (let’s say the image to the right) will look from the current image’s perspective, we need to transform it into a new space. This transformation mimics the phenomenon that we undergo. That is, the slightly distorted, and altered image that we see from our periphery . This process is called warping. We are converting an image, based on a new transformation.
@@ -148,8 +144,8 @@ The figure below illustrate dthe final stitched panoramas obtaiend using our out
 
 <table>
    <tr>
-    <td>Step-by-Step Stitching</td>
-    <td> OpenCV Built-in Stitching</td>
+    <td align="center">Step-by-Step Stitching</td>
+    <td align="center"> OpenCV Built-in Stitching</td>
    </tr> 
    <tr>
     <td> <img src="results/mountain-scene-2-images-step-by-step-panorama.jpg" width="600"  ></td>
@@ -167,11 +163,11 @@ The set of of building outddor scene images below are used to demonstrate a [MAT
 
 <table>
   <tr>
-    <td> Image # 1</td>
-    <td> Image # 2</td>
-    <td> Image # 3 </td>
-    <td> Image # 4</td>
-    <td> Image # 5 </td>
+    <td align="center"> Image # 1</td>
+    <td align="center"> Image # 2</td>
+    <td align="center"> Image # 3 </td>
+    <td align="center"> Image # 4</td>
+    <td align="center"> Image # 5 </td>
    </tr> 
   <tr>
     <td> <img src="images/building1.JPG" width="350"  ></td>
@@ -184,8 +180,8 @@ The set of of building outddor scene images below are used to demonstrate a [MAT
 
 <table>
    <tr>
-    <td>Step-by-Step Stitching</td>
-    <td> OpenCV Built-in Stitching</td>
+    <td align="center">Step-by-Step Stitching</td>
+    <td align="center"> OpenCV Built-in Stitching</td>
    </tr> 
    <tr>
     <td> <img src="results/building-scene-panorama.jpg" width="600"  ></td>
@@ -201,11 +197,11 @@ The set of synthetic indoor scene images below are taken from PAnorama Sparsely 
 
 <table>
   <tr>
-    <td> Image # 1</td>
-    <td> Image # 2</td>
-    <td> Image # 3 </td>
-    <td> Image # 4</td>
-    <td> Image # 5 </td>
+    <td align="center"> Image # 1</td>
+    <td align="center"> Image # 2</td>
+    <td align="center"> Image # 3 </td>
+    <td align="center"> Image # 4</td>
+    <td align="center"> Image # 5 </td>
    </tr> 
   <tr>
     <td> <img src="images/img01.jpg" width="350"  ></td>
@@ -218,8 +214,8 @@ The set of synthetic indoor scene images below are taken from PAnorama Sparsely 
 
 <table>
    <tr>
-    <td>Step-by-Step Stitching</td>
-    <td> OpenCV Built-in Stitching</td>
+    <td align="center">Step-by-Step Stitching</td>
+    <td align="center"> OpenCV Built-in Stitching</td>
    </tr> 
    <tr>
     <td> <img src="results/synthetic-5-images-panorama.jpg" width="600"  ></td>
