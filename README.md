@@ -244,8 +244,8 @@ We plan to implement each of these image-stitching steps using ordered ordered i
 
 ## 8.  References
 
-1. Adrian Rosebrock. Image Stitching with OpenCV and Python. Retrieved from: https://www.pyimagesearch.com/2018/12/17/image-stitching-with-opencv-and-python/ (October 5th, 2022).
-2. Thalles Silva. (April 13, 2021). Retrieved from: Image Panorama Stitching with OpenCV. https://towardsdatascience.com/image-panorama-stitching-with-opencv-2402bde6b46c (October 5th, 2022).
-3. Data Hacker. How to create a panorama image using OpenCV with Python. Retrieved from: http://datahacker.rs/005-how-to-create-a-panorama-image-using-opencv-with-python/ (October 5th, 2022).
-4. Naveksha Sood. Image Stitching to create a Panorama. Retrieved from: https://medium.com/@navekshasood/image-stitching-to-create-a-panorama-5e030ecc8f7 (October 5th, 2022).
-5. Vagdevi Kommineni. Image Stitching. Retrieved from: https://vagdevik.wordpress.com/author/ (October 5th, 2022).
+1. Adrian Rosebrock. Image Stitching with OpenCV and Python. Retrieved from: https://www.pyimagesearch.com/2018/12/17/image-stitching-with-opencv-and-python/.
+2. Thalles Silva. (April 13, 2021). Retrieved from: Image Panorama Stitching with OpenCV. https://towardsdatascience.com/image-panorama-stitching-with-opencv-2402bde6b46c.
+3. Data Hacker. How to create a panorama image using OpenCV with Python. Retrieved from: http://datahacker.rs/005-how-to-create-a-panorama-image-using-opencv-with-python/.
+4. Naveksha Sood. Image Stitching to create a Panorama. Retrieved from: https://medium.com/@navekshasood/image-stitching-to-create-a-panorama-5e030ecc8f7.
+5. Vagdevi Kommineni. Image Stitching. Retrieved from: https://vagdevik.wordpress.com/author/.
